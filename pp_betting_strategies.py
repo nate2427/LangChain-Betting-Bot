@@ -1,12 +1,6 @@
 from langchain import OpenAI
-from langchain.agents import initialize_agent, Tool
 from langchain.chains import LLMChain
-from langchain.chains import VectorDBQA
 from langchain.prompts import PromptTemplate
-from langchain.embeddings.openai import OpenAIEmbeddings    
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import FAISS
-from langchain.document_loaders import UnstructuredHTMLLoader, CSVLoader
 import os, requests, datetime
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
